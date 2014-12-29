@@ -31,7 +31,9 @@
 
             <footer class="post-footer">
                 <section class="author-img">
-                    <img src="{{@blog.logo}}" alt="Blog Logo" width="100" />
+                    {{#if @blog.logo}}
+                      <img src="{{@blog.logo}}" alt="Blog Logo" width="100" />
+                    {{/if}}
                 </section>
                 <section class="author">
                     <h4>{{author.name}}</h4>
